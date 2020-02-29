@@ -1,0 +1,30 @@
+﻿
+
+
+
+
+
+
+@if (TempData["gonder"] != null)
+{
+    var veri = (MVCWebUI.Identity.ApplicationUser)TempData["gonder"];
+
+    <li class="nav-item active">
+        <a class="nav-link" href="/">@veri.Name</a>
+    </li>
+
+    <li class="nav-item active">
+        <a class="nav-link" href="/Account/Logout">Çıkış</a>
+    </li>
+}
+else
+{
+    <li class="nav-item active">
+        <a class="nav-link" href="/Account/Login">Login</a>
+    </li>
+
+    <li class="nav-item active">
+        <a class="nav-link" href="/Account/Register">Kayıt ol</a>
+    </li>
+}
+

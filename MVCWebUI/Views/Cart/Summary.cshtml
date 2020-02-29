@@ -1,0 +1,27 @@
+﻿@using MVCWebUI.Models
+@model MVCWebUI.Models.Cart
+
+
+<style>
+    #cart1 {
+        color: white;
+        font-size: 22px;
+        margin-left: 400px;
+        padding-top: 3px;
+    }
+</style>
+
+
+
+<li id="cart1" class="nav-item">
+    <i class="fa fa-cart-plus" aria-hiddem="true"></i>
+    (@Model.CartLines.Count)
+</li>
+
+
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
