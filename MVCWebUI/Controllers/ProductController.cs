@@ -11,6 +11,7 @@ using MVCWebUI.Models;
 
 namespace MVCWebUI.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class ProductController : Controller
     {
         private DataContext db = new DataContext();
